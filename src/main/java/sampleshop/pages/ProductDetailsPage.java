@@ -29,7 +29,8 @@ public class ProductDetailsPage extends BasePage {
     private WebElement addToCartButton;
     @FindBy(css = "select#group_1")
     private WebElement sizeSelect;
-    @FindBy(xpath = "//*[text()[contains(.,'Produkt dodany poprawnie do Twojego koszyka')]]")
+    @FindBy(xpath = "//h4[contains(text(), 'Produkt dodany poprawnie do Twojego koszyka')]")
+            //(xpath = "//*[text()[contains(.,'Produkt dodany poprawnie do Twojego koszyka')]]")
 
     public WebElement productAddedMessage;
 

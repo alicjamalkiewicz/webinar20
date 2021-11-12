@@ -23,11 +23,9 @@ public class ProductDetailsTest extends BaseTest {
         productDetailsPage.clickAddToCartButton();
         productDetailsPage.modalViewAppears();
 
-        Assert.assertEquals(productDetailsPage.productAddedMessage.getText(), "Produkt dodany poprawnie do Twojego koszyka");
+        Assert.assertEquals(productDetailsPage.productAddedMessage.getText(), "\uE876Produkt dodany poprawnie do Twojego koszyka");
 
     }
-
-
 
 //    @Test
 //    public void thisMethodWillFail() {
